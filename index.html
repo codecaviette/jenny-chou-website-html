@@ -6,22 +6,23 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS - I used CDN since it's easier to implement, esp desired versions -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://use.fontawesome.com/894a34b01d.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
 
     <!-- Additional CSS -->
     <link rel="stylesheet" href="index.css">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|Amiko" />
 
     <title> Jenny Chou - Portfolio </title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark  sticky-top">
         <div class="container-fluid">    
             <a class="navbar-brand" href="#">JC</a>
             
@@ -31,9 +32,9 @@
 
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active "> <a class="nav-link" href="#"> about <span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item "><a class="nav-link" href="#"> projects </a></li>
-                    <li class="nav-item "><a class="nav-link" href="#"> contact </a></li>
+                    <li class="nav-item active "> <a  class="nav-link" href="#about-screen"> about <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item "><a class="nav-link" href="#projects-screen"> projects </a></li>
+                    <li class="nav-item "><a class="nav-link" href="#contact-screen"> contact </a></li>
                 </ul>
             </div>
         </div>
@@ -53,15 +54,15 @@
     </section>
 
     <!-- About me -->
-    <section>
-        <div class="container-fluid bg-light" id="about-section">
+    <section id="about-screen">
+        <div class="container-fluid" id="about-section">
             <div class="row" >
-                <div class="col-sm-6 " id="about-text" >
-                    <h1> Hi, I'm Jenny. </h1>
-                    <p> notes about me. me me me. notes about me. me me me.notes about me. me me me. notes about me. me me me.  </p>
+                <div class="col-sm-6" id="about-text" >
+                    <h2> Hi, I'm Jenny. </h2>
+                    <p> notes about me. me me me. notes about me. me me me.notes about me. me me me. notes about me.e me me.notes about me. me me me. notes about me.e me me.notes about me. me me me. notes about me. me me me.  </p>
                 </div> 
                 <div class="col" id="about-image">
-                    <i class="fa fas fa-female"></i>
+                    <img src="img/jmc1.png" class="img-fluid">
                 </div>
             </div>
     
@@ -69,15 +70,108 @@
 
     </section>
 
-    <section>
+    <section id="projects-screen">
         <div class="container-fluid" id="skills-section">
             <div class="row">
-
+                <div class="col-md-6 col-lg-3 text-center">
+                    <i class="fab fa-css3-alt project-icon"></i>
+                    <h3> CSS </h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sunt ratione, itaque ea quia provident! Quia commodi ducimus quas saepe voluptatum cum, non facere est.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <i class="fab fa-html5 project-icon"></i>
+                    <h3> HTML </h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sunt ratione, itaque ea quia provident! Quia commodi ducimus quas saepe voluptatum cum, non facere est.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <i class="fab fa-js-square project-icon"></i>
+                    <h3> JavaScript </h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sunt ratione, itaque ea quia provident! Quia commodi ducimus quas saepe voluptatum cum, non facere est.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <i class="fab fa-bootstrap project-icon"></i>
+                    <h3> Bootstrap </h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sunt ratione, itaque ea quia provident! Quia commodi ducimus quas saepe voluptatum cum, non facere est.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <i class="fab fa-react project-icon"></i>
+                    <h3> React </h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sunt ratione, itaque ea quia provident! Quia commodi ducimus quas saepe voluptatum cum, non facere est.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <i class="fab fa-node-js project-icon"></i>
+                    <h3> NodeJS </h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sunt ratione, itaque ea quia provident! Quia commodi ducimus quas saepe voluptatum cum, non facere est.</p>
+                </div>
+                
             </div>
         </div>
 
     </section>
 
+    <!-- Contact Form -->
+    <section id="contact-screen">
+        <div class= "container-fluid " id="contact-section">
+            <div class="row row-content">
+                <div class="col-12">
+                    <h2> Get in touch </h2>
+                    <hr />
+                </div>
+                <div class="col-md-10">
+                    <form> 
+                        <div class="form-group row">
+                            <label for="firstName" class="col-12 col-form-label"> First name </label> 
+                            <div class="col">
+                                <input type="text" class="form-control input-lg" id="firstName" name="firstName" placeholder="First Name" />
+                            </div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <label for="lastName" class="col-12 col-form-label"> Last name </label>
+                            <div class="col"> 
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                            </div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <label for="email" class="col-12 col-form-label"> Email </label>
+                            <div class="col">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                            </div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <label for="feedback" class="col-12 col-form-label"> Comments  </label>                        
+                            <div class="col">
+                                    <textarea class="form-control" id="feedback" name="feedback" rows="8"> </textarea>
+                            </div>                    
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-10">
+                                <button type="submit" class="btn btn-info"> Submit </button>
+                            </div> 
+                        </div>
+                            
+                    </form>
+                </div>
+           </div>
+    
+        </div>
+
+
+
+
+        </div>
+    </section>
+
+    <footer>
+        <!--  Social Media including GitHub-->
+        <div class="text-center">
+            <a class="btn btn-social-icon btn-github" href="https://github.com/codecaviette"> <i class="fab fa-github-square"></i></a>
+            <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/jmychou/"> <i class="fab fa-linkedin"></i></a>
+        </div>
+
+    </footer>
 
     <!-- JavaScript files needed to run Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
