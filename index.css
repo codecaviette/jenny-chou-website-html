@@ -84,7 +84,7 @@ body {
 }
 
 .project-icon{
- font-size: 4rem;   
+    font-size: 4rem;   
 }
 
 #contact-section{
@@ -94,5 +94,10 @@ body {
 }
 
 .btn-social-icon {
-    font-size: 2rem;
+    font-size: 2.3rem;
+    color: #282e33;
+}
+
+#contactTitle {
+    font-family:"Amiko", sans-serif;
 }
